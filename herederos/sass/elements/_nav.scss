@@ -1,0 +1,88 @@
+header{
+    width: 100vw;
+    height: 300px;
+    background-image: url('/herederos/assets/img/322141563_5926112537482448_3424099968158082806_n.jpg');
+    background-size: cover;
+    nav{ 
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content:space-around;
+        background-color: orangered;
+        z-index: 300000;
+        position: fixed;
+        top: 0;
+        .tittle{
+            margin:15px;
+            z-index: 200;
+            color: white;
+            text-transform: uppercase;
+            
+        }
+        .btn{
+            width: 40px;
+            height: 30px;
+            z-index: 200;
+            margin:10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span{
+                display: block;
+                border-radius: 3px;
+                width: 100%;
+                padding: 2px;
+                margin: 2px 0px;
+                background-color:white;
+                transition: .6s ease;
+            }
+        }
+        .menu{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            position:fixed;
+            background-color: aqua;
+            clip-path: circle(0% at 50% 50%);
+            z-index: 100;
+            transition: .5s ease;
+            li{
+                list-style: none;
+            }
+            li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: $tittleFont;
+            font-size: 40px;
+            }
+        }
+    }
+}
+.wave{
+    background-image: url("/herederos/assets/img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    transform: translateY(-70px);
+    z-index: 1;
+    
+}
+
+.menu.active{
+    clip-path:circle(100% at 50% 50%)
+}
+.activeL1{
+    transform: rotate(45deg) translate(12px);
+}
+.activeL3{
+    transform: rotate(-45deg) translate(10px);
+}
+.activeL2{
+    transform: translateX(-100px);
+    opacity: 0
+}
