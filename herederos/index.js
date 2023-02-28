@@ -14,8 +14,11 @@ document.addEventListener('click', e => {
       btnLine2.classList.toggle("activeL2");
       btnLine3.classList.toggle("activeL3");
    }
-   if(e.target.matches(".btn-form")){
-    btnform.setAttribute("href", `https://wa.me/50496027464?text=${$input. value}`);   
+   if($input.value === ""){
+      btnform.removeAttribute("href")
+   }else{
+      btnform.setAttribute("href", `https://wa.me/50496027464?text=${$input. value}`);
+      $input.value = "";
    }
 });
 function load(entradas,obser) {
