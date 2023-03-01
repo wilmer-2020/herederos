@@ -2,7 +2,7 @@
 header {
   width: 100vw;
   height: 300px;
-  background-image: url("/herederos/assets/img/322141563_5926112537482448_3424099968158082806_n.jpg");
+  background-image: url("/herederos/herederos/herederos/assets/img/322141563_5926112537482448_3424099968158082806_n.jpg");
   background-size: cover;
 }
 
@@ -95,7 +95,7 @@ header nav .menu li a {
 }
 
 .wave {
-  background-image: url("/herederos/assets/img/wave.svg");
+  background-image: url("/herederos/herederos/herederos/assets/img/wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -733,6 +733,7 @@ h2 {
     margin: 0;
   }
   header nav .menu {
+    width: 50%;
     position: relative;
     background-color: transparent;
     display: -webkit-box;
