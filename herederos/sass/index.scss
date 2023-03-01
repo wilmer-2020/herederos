@@ -277,12 +277,10 @@ h2 {
       }
     }
   }
-
   .wave {
-    position: absolute;
-    background-size: cover;
-    transform: translateY(260px);
-    left: 0;
+   width: 100%;
+   height: 160px;
+   transform: translateY(-120px);
   }
   .info-section {
     display: flex;
