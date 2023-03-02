@@ -932,4 +932,40 @@ h2 {
     gap: 10px;
   }
 }
+
+@media screen and (min-width: 1281px) {
+  header {
+    height: 700px;
+  }
+  header .nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: red;
+    width: 100%;
+    background-color: transparent;
+    position: static;
+  }
+  header .nav .menu {
+    width: 30%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .nav .menu a {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  header .nav .menu a:hover {
+    border-radius: 15px;
+    padding: 5px 2px;
+    background-color: white;
+    color: red;
+  }
+  .wave {
+    width: 100%;
+    height: 230px;
+    -webkit-transform: translateY(-190px);
+            transform: translateY(-190px);
+  }
+}
 /*# sourceMappingURL=index.css.map */

@@ -401,3 +401,35 @@ h2 {
     }
   }
 }
+
+@media screen and(min-width: 1281px){
+  header{
+    height: 700px;
+    .nav{
+      justify-content: space-around;
+      background-color: red ;
+      width: 100%;
+      background-color: transparent;
+      position: static;
+      .menu{
+        width: 30%;
+        justify-content: space-between;
+  
+        a{
+          transition: .5s ease;
+          &:hover{
+            border-radius: 15px;
+            padding: 5px 2px;
+            background-color: white;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .wave{
+    width: 100%;
+    height: 230px;
+    transform: translateY(-190px);
+  }
+}
